@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Hover Effect</title>
+        <link rel="stylesheet" href="s.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #f5ebe3;
+                font-family: Arial, sans-serif;
+            }
+
+            .board {
+                display: inline-block;
+                margin: 20px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .board img {
+                display: block;
+                width: 300px;
+                height: 200px;
+                transition: transform 0.4s ease;
+            }
+
+            /* Hover effect starting from the bottom */
+            .board:hover img {
+                transform: translateY(-100%);
+            }
+
+            .hover-card {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: white;
+                padding: 20px;
+                opacity: 0;
+                transition: opacity 0.4s ease;
+            }
+
+            .board:hover .hover-card {
+                opacity: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section class="shop">
+            <div class="boards-section">
+                <h2 style="text-align: center; font-size: 48px;">Projects</h2>
+                <div class="boards">
+                    <div class="board">
+                        <img src="assets/projects/music.png" alt="Music">
+                        <!-- Hover card appears on hover -->
+                        <div class="hover-card">
+                            <div class="hover-card-info">
+                                <div class="hover-card-match">99% Match</div>
+                                <div class="hover-card-rating">TV-14</div>
+                                <div class="hover-card-episodes">7 Episodes</div>
+                                <div class="hover-card-tags">
+                                    <span>Captivating</span>
+                                    <span>Intimate</span>
+                                    <span>Reality TV</span>
+                                </div>
+                            </div>
+                            <div class="hover-card-buttons">
+                                <button class="hover-card-play">Play</button>
+                                <button class="hover-card-add">+</button>
+                                <button class="hover-card-like">👍</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>
