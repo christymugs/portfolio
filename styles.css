@@ -728,7 +728,7 @@ nav {
 /* Project description styling */
 .board h2 {
     font-size: 1.5rem;
-    color: #ffe6ce;
+    color: #fafafa;
     text-align: center;
 }
 
@@ -760,8 +760,8 @@ nav {
     cursor: pointer;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    background-color: #3d3c3c;
+    box-shadow: 0 8px 20px rgba(213, 213, 213, 0.1);
+    background-color: #161616;
 }
 
 .board:hover {
