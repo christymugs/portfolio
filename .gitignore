@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# old static site, kept locally for reference only
+legacy-static/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
